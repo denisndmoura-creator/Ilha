@@ -31,14 +31,20 @@ const ESCOLA = {nome:"IFMT", x:29, y:24, larg:22, alt:7, img:"escola.png"};
 // Pra um personagem CONSTRUIR a casa: adicione  obra:{inicio:"2026-11-20T15:00", min:120}
 // (ela vai subindo aos poucos e o dono fica lá construindo). Pra usar sua arte: img:"casa-ana.png"
 const CONSTRUCOES = [
-  
+   
+  {id:"casa-dionisio", dono:"Dionisio", tipo:"casa", x:30, y:44, img:"casa_dionizio", w:8, h:5, obra:{inicio:"2026-11-13T8:00", min:30}},
 ];
 
 // Moradores. trabalho = "escola" ou o id de uma construção (ou null).
 // sprite = seu desenho: "ana.png"  ou em camadas ["corpo.png","cabelo.png","roupa.png"]
 // (sem sprite, aparece um bonequinho padrão da cor escolhida). Tamanho sugerido: 16x24 px.
 const MORADORES = [
-  
+
+{nome:"Pedro_h.",   casa:"",   trabalho:"escola",  cor:"#e84393",
+sprite:"Pedro-h.png"},
+
+  {nome:"Dionisio",   casa:"casa-dionisio",   trabalho:"escola",  cor:"#e84393",
+sprite:"dionizio.png"},
 ];
 
 // Enfeites: tipo "arvore", "flor", "banco", "placa" (com texto) ou img:"arquivo.png"
