@@ -33,17 +33,27 @@ const ESCOLA = {nome:"IFMT", x:29, y:24, larg:22, alt:7, img:"escola.png"};
 const CONSTRUCOES = [
    
   {id:"casa-dionisio", dono:"Dionisio", tipo:"casa", x:30, y:44, img:"casa_dionizio.png", w:8, h:5, obra:{inicio:"2026-11-13T12:30", min:30}},
-];
+  
+   {id:"casa-pedro-h.", dono:"Pedro-h.", tipo:"casa", x:38, y:34, img:"casa_pedro.png", w:8, h:5, obra:{inicio:"2026-11-13T23:02", min:20}},
+   
+    {id:"biqueira", dono:"Pedro-h.", tipo:"loja", x:15, y:42, img:"biqueira.png", w:8, h:5, obra:{inicio:"2026-11-13T23:25", min:50}},
 
+  {id:"bodega-do-seu-dionisio", dono:"Dionisio", tipo:"loja", x:23, y:13, img:"BodegadoseuDionísio.png", w:8, h:5, obra:{inicio:"2026-11-13T23:15", min:50}},
+ 
+  ];
 // Moradores. trabalho = "escola" ou o id de uma construção (ou null).
 // sprite = seu desenho: "ana.png"  ou em camadas ["corpo.png","cabelo.png","roupa.png"]
 // (sem sprite, aparece um bonequinho padrão da cor escolhida). Tamanho sugerido: 16x24 px.
 const MORADORES = [
 
-{nome:"Pedro_h.",   casa:"",   trabalho:"escola",  cor:"#e84393",
+{nome:"José-m.",   casa:"",   trabalho:"escola",  cor:"#e84393",
+sprite:"jose.png"},
+
+
+{nome:"Pedro_h.",   casa:"casa-pedro-h.",   trabalho:"biqueira",  cor:"#e84393",
 sprite:"Pedro-h.png"},
 
-  {nome:"Dionisio",   casa:"casa-dionisio",   trabalho:"escola",  cor:"#e84393",
+  {nome:"Dionisio",   casa:"casa-dionisio",   trabalho:"bodega-do-seu-dionisio",  cor:"#e84393",
 sprite:"dionizio.png"},
 ];
 
